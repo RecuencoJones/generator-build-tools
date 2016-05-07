@@ -7,9 +7,9 @@ var gulp = require('gulp'),
  * Convert HTML templates to js into temporary directory.
  */
 gulp.task('html2js', function() {
-  return gulp.src(config.source.app + '/templates/**/*.tpl.html')
+  return gulp.src(config.source.app + '/**/*.tpl.html')
     .pipe(html2js({
-      base: config.source.app + '/templates',
+      base: config.source.app,
       outputModuleName: config.pkg.name,
       quoteChar: '\''
     }))

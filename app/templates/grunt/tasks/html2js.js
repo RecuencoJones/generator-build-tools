@@ -8,7 +8,7 @@ module.exports = function(grunt) {
 
   grunt.config.set('html2js', {
     options: {
-      base: '<%%= source.app %>/templates',
+      base: '<%%= source.app %>',
       module: '<%%= pkg.name %>',
       quoteChar: '\'',
       existingModule: true,
