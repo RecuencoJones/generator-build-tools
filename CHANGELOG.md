@@ -1,3 +1,7 @@
+## 1.0.2
+
+- Fixed concat task.
+
 ## 1.0.1
 
 - Fixed html2js tasks.
