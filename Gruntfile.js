@@ -11,8 +11,6 @@ module.exports = function(grunt) {
 
   // Register default task.
   grunt.registerTask('default', [
-    'lint',
-    'build',
-    'concurrent'
+    'lint'
   ]);
 };

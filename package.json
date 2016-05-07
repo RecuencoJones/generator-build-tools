@@ -1,21 +1,30 @@
 {
   "name": "generator-build-tools",
-  "version": "0.0.0",
-  "license": "MIT",
+  "version": "1.0.0",
   "description": "Yeoman generator for frontend build tools",
+  "license": "MIT",
+  "author": "RecuencoJones",
   "repository": {
     "type": "git",
     "url": "https://github.com/RecuencoJones/generator-build-tools"
   },
   "dependencies": {
-    "chalk": "1.1.1",
+    "chalk": "1.1.3",
+    "grunt": "0.4.5",
+    "gruntify-eslint": "1.3.0",
     "lodash": "4.11.2",
-    "yeoman-generator": "0.22.5",
-    "yosay": "1.1.0"
+    "yeoman-generator": "0.20.0",
+    "yosay": "1.1.1"
   },
   "files": [
     "app",
     "CHANGELOG.md",
     "README.md"
+  ],
+  "keywords": [
+    "yeoman-generator",
+    "grunt",
+    "gulp",
+    "build tools"
   ]
 }

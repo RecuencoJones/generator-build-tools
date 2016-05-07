@@ -1,0 +1,26 @@
+/**
+ * Concat task for built JS and CSS files.
+ *
+ * @param {Object} grunt Reference to the current Grunt process.
+ */
+module.exports = function(grunt) {
+  grunt.loadNpmTasks('grunt-contrib-concat');
+
+  grunt.config.set('concat', {
+    options: {
+      separator: '\n'
+    },
+    js: {
+      src: [
+        '<%%= source.tmp %>/**/*.js'
+      ],
+      dest: '<%%= source.tmp %>/<%%= pkg.name %>.js'
+    },
+    css: {
+      src: [
+        '<%%= source.tmp %>/**/*.css'
+      ],
+      dest: '<%%= source.tmp %>/<%%= pkg.name %>.css'
+    }
+  });
+};

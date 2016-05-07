@@ -1,6 +1,6 @@
 # generator-build-tools
 
-A yeoman generator for usual build tools ina frontend project.
+A yeoman generator for usual build tools in a frontend project.
 
 # Usage
 
@@ -16,11 +16,13 @@ with all the devDependencies you need.
 - Tasks:
     - Clean
     - Build (both min and src)
+    - Watch
     - Concat
     - Uglify
     - HTML2JS
     - Less, Sass, Stylus, CSS
     - Lint (eslint) for JavaScript
+    - Doc (jsdoc3)
 
 # Future features:
 
@@ -28,6 +30,8 @@ with all the devDependencies you need.
     - Webpack
     - Broccoli?
 - More tasks:
+    - Babel
+    - Connect
     - CSS Lint
     - HTML Lint
     - Dependency injection
