@@ -12,14 +12,14 @@ module.exports = function(grunt) {
     },
     js: {
       src: [
-        '!<%%= pkg.name %>.js',
+        '!<%%= source.tmp %>/<%%= pkg.name %>.js',
         '<%%= source.tmp %>/**/*.js'
       ],
       dest: '<%%= source.tmp %>/<%%= pkg.name %>.js'
     },
     css: {
       src: [
-        '!<%%= pkg.name %>.css',
+        '!<%%= source.tmp %>/<%%= pkg.name %>.css',
         '<%%= source.tmp %>/**/*.css'
       ],
       dest: '<%%= source.tmp %>/<%%= pkg.name %>.css'

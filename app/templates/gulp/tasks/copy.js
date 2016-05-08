@@ -22,6 +22,5 @@ gulp.task('copy:css', function() {
 <% } -%>
 gulp.task('copy', [
   'copy:js'<% if (styles === 'css') { %>,
-  'copy:css'
-<% } -%>
+  'copy:css'<% } %>
 ]);

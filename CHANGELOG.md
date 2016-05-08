@@ -1,3 +1,8 @@
+## 1.0.3
+
+- Fixed concat task paths.
+- Fixed uglify and style tasks breaking watch in gulp.
+
 ## 1.0.2
 
 - Fixed concat task.
