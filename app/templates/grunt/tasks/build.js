@@ -23,9 +23,11 @@ module.exports = function(grunt) {
   ]);
 
   grunt.registerTask('build', [
+    'clean:index',
     'clean:tmp',
     'clean:dist',
     'build:js',
-    'build:css'
+    'build:css',
+    'inject:app'
   ]);
 };

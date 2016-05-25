@@ -20,7 +20,10 @@ with all the devDependencies you need.
     - Concat
     - Uglify
     - HTML2JS
+    - Wrap (dependency injection)
     - Less, Sass, Stylus, CSS
+    - Unit testing and coverage (karma, mocha)
+    - Functional testing (protractor)
     - Lint (eslint) for JavaScript
     - Doc (jsdoc3)
 
@@ -34,6 +37,3 @@ with all the devDependencies you need.
     - Connect
     - CSS Lint
     - HTML Lint
-    - Dependency injection
-    - Unit testing and coverage (karma, mocha)
-    - Functional testing (protractor)

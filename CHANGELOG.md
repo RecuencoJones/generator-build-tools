@@ -1,3 +1,10 @@
+# 1.1.0
+
+- Added unit tests
+- Added test tasks for coverage and tdd
+- Added functional tests
+- Added dependency injection for app and test
+
 ## 1.0.3
 
 - Fixed concat task paths.

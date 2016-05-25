@@ -10,6 +10,7 @@ module.exports = function(grunt) {
     options: {
       force: true
     },
+    index: ['index.html'],
     test: ['<%%= source.test %>/results'],
     tmp: ['<%%= source.tmp %>'],
     dist: ['<%%= source.dist %>'],

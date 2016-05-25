@@ -1,0 +1,18 @@
+{
+  "js": {
+    "libs": [
+      "node_modules/lodash/index.js",
+      "node_modules/angular/angular.min.js"
+    ],
+    "app": [
+      "dist/<%= projectName %>.js"
+    ]
+  },
+  "css": {
+    "libs": [
+    ],
+    "app": [
+      "dist/<%= projectName %>.css"
+    ]
+  }
+}

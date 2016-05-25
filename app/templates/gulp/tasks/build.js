@@ -30,8 +30,9 @@ gulp.task('build:css', function(done) {
 
 gulp.task('build', function(done) {
   runSequence(
-    ['clean:tmp', 'clean:dist'],
+    ['clean:index', 'clean:tmp', 'clean:dist'],
     ['build:js', 'build:css'],
+    ['inject:app'],
     done
   );
 });

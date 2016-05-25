@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title><%= projectName %></title>
+
+    <!-- Library stylesheets -->
+    <%%= inject.css.libs %>
+
+    <!-- App stylesheets -->
+    <%%= inject.css.app %>
+
+    <!-- Library scripts -->
+    <%%= inject.js.libs %>
+
+    <!-- App scripts -->
+    <%%= inject.js.app %>
+  </head>
+  <body>
+    <%%= content %>
+  </body>
+</html>

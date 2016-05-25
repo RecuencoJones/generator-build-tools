@@ -3,6 +3,14 @@ var gulp = require('gulp'),
   config = require('../config/build.conf');
 
 /**
+ * Clean task for index file.
+ */
+gulp.task('clean:index', function() {
+  return gulp.src('index.html', {read: false})
+    .pipe(clean({force: true}));
+});
+
+/**
  * Clean task for temporary folder.
  */
 gulp.task('clean:tmp', function() {
@@ -38,6 +46,7 @@ gulp.task('clean:test', function() {
  * General clean task.
  */
 gulp.task('clean', [
+  'clean:index',
   'clean:tmp',
   'clean:dist',
   'clean:doc',

@@ -11,6 +11,7 @@ module.exports = function(grunt) {
       logConcurrentOutput: true
     },
     default: [
+      'test:tdd',
       'watch'
     ]
   });

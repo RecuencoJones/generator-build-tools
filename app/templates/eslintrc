@@ -2,13 +2,21 @@
   "env": {
     "browser": true,
     "node": true,
-    "commonjs": true
+    "amd": true,
+    "commonjs": true,
+    "mocha": true,
+    "protractor": true
   },
   "globals": {
     "angular": true,
     "jQuery": true,
     "$": true,
-    "_": true
+    "_": true,
+    "sinon": true,
+    "expect": true,
+    "setTestTemplate": true,
+    "flows": true,
+    "utils": true
   },
   "rules": {
     "no-alert": 2,

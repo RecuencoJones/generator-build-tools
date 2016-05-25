@@ -4,7 +4,14 @@
   "description": "<%= projectName %> generated with generator-build-tools",
   "license" : "UNLICENSED",
   "main": "dist/<%= projectName %>.js",
+  "dependencies": {
+    "angular": "1.4.5",
+    "lodash": "3.10.1"
+  },
   "devDependencies": {
+    "chai": "3.4.1",
+    "connect": "3.4.1",
+    "es6-promise": "3.1.2",
 <% if (builder === 'grunt') { -%>
     "grunt": "0.4.5",
     "grunt-concurrent": "2.0.3",
@@ -22,6 +29,8 @@
     "grunt-contrib-watch": "0.6.1",
     "grunt-html2js": "0.3.5",
     "grunt-jsdoc": "1.1.0",
+    "grunt-karma": "0.12.1",
+    "grunt-protractor-runner": "3.1.0",
     "grunt-timer": "0.6.0",
     "grunt-tpl-wrap": "1.0.1",
     "gruntify-eslint": "1.3.0",
@@ -36,23 +45,47 @@
 <% } -%>
     "gulp-clean": "0.3.1",
     "gulp-concat": "2.6.0",
-    "gulp-html2js": "0.2.0",
-    "gulp-wrap": "0.11.0",
-    "gulp-uglify": "1.2.0",
-    "gulp-rename": "1.2.2",
     "gulp-eslint": "2.0.0",
+    "gulp-html2js": "0.2.0",
     "gulp-jsdoc3": "0.2.0",
+    "gulp-protractor": "2.3.0",
+    "gulp-rename": "1.2.2",
+    "gulp-uglify": "1.2.0",
+    "gulp-wrap": "0.11.0",
     "require-dir": "0.3.0",
     "run-sequence": "1.1.2",
 <% } -%>
-    "ink-docstrap": "1.1.4"
+    "ink-docstrap": "1.1.4",
+    "ip": "1.1.2",
+    "karma": "0.13.19",
+    "karma-chai": "0.1.0",
+    "karma-chai-sinon": "0.1.5",
+    "karma-chrome-launcher": "0.2.1",
+    "karma-coverage": "0.5.2",
+    "karma-junit-reporter": "0.2.1",
+    "karma-mocha": "0.2.0",
+    "karma-phantomjs-launcher": "1.0.0",
+    "karma-sinon": "1.0.4",
+    "mochawesome": "RecuencoJones/mochawesome#1.3.5",
+    "mocha": "2.3.4",
+    "phantomjs-prebuilt": "2.1.7",
+    "protractor": "3.2.2",
+    "serve-static": "1.10.2",
+    "sinon": "1.17.2",
+    "sinon-chai": "2.8.0",
+    "yargs": "4.6.0"
   },
   "scripts": {
+    "setup": "./node_modules/.bin/webdriver-manager update",
     "start": "<%= builder %>",
     "build": "<%= builder %> build",
     "clean": "<%= builder %> clean",
     "doc": "<%= builder %> doc",
     "lint": "<%= builder %> lint",
-    "all": "<%= builder %> clean lint doc build"
+    "test": "<%= builder %> test",
+    "test:unit": "<%= builder %> test:unit",
+    "test:coverage": "<%= builder %> test:coverage",
+    "test:functional": "<%= builder %> test:functional",
+    "all": "<%= builder %> clean lint doc build test"
   }
 }
